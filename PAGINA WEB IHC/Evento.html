@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+	<title>EventosUCAB</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+	<script src="bootstrap/js/bootstrap.bundle.js"></script>
+	<script src="bootstrap/js/JQuery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<body>
+
+		
+				
+		<DIV class="Presentacion">			
+			
+			<a href="#" class="btn btn-lg btn-primary rigth"><img src="img/user.png" alt="...">  </a>
+		</DIV>
+	<!--	<ul>
+	  		<li><a class="active" href="#home">Home</a></li>
+	  		<li><a href="#news">News</a></li>
+	  		<li><a href="#contact">Contact</a></li>
+	  		<li><a href="#about">About</a></li>
+		</ul>
+	--->
+
+
+		<ul class="navbar  nav nav-pills nav-fill" id="MyNav">
+            <li class="nav-item">
+                <a class="nav-link " id="B" href="EventosUCAB.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " id="B" href="Categorias.html">Categorías</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="B" href="#">Calendario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Eventos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Agrupaciones.html" id="B">Agrupaciones</a>
+            </li>
+            <li class="nav-item">
+                
+                    
+                    <div class="navbar-inner">
+                        <div class="container">     
+                            <div class="dropdown">
+                             
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Busqueda
+                                </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>  
+        </ul>
+				
+			
+        <div>
+
+        	<div>
+
+        		
+        		
+	        	<a  class="btn btn-lg  rigth" style="color: white"><img src="img/campana.png" id="myImage" onclick="changeImage()" alt="...">
+	        		<br>
+	        		<p id="msgcampana">Suscribirse </p> 
+	        	</a>
+
+
+	        	<a  href="https://www.instagram.com/becaunpana/?hl=es-la" class="btn btn-lg  rigth" style="color: white"><img src="img/instagram2.png" id="myImage2" onmouseover="changeImage2()" onmouseout="changeImage2()" alt="...">
+        		</a>
+
+        		<a  href="https://twitter.com/becaunpana?lang=es" class="btn btn-lg  rigth" style="color: white"><img src="img/twitter1.png" id="myImage3" onmouseover="changeImage3()" onmouseout="changeImage3()" alt="...">
+        		</a>
+
+        		<a  href="https://www.yooying.com/becaunpana" class="btn btn-lg  rigth" style="color: white"><img src="img/face1.png" id="myImage4" onmouseover="changeImage4()" onmouseout="changeImage4()" alt="...">
+        		</a>
+
+        		<a  href="http://www.becaunpana.org/" class="btn btn-lg  rigth" style="color: white"><img src="img/web1.png" id="myImage5" onmouseover="changeImage5()" onmouseout="changeImage5()" alt="...">
+        		</a>
+
+
+        		<a class="btn btn-lg  left" style="color: white"><img src="img/star1.png" id="star1" onclick="set1()" onmouseover="changeStar1()" onmouseout="changeStar1()" alt="...">
+        		</a>
+
+        		<a class="btn btn-lg  left" style="color: white"><img src="img/star1.png" id="star2" onclick="set2()" onmouseover="changeStar2()" onmouseout="changeStar2()" alt="...">
+        		</a>
+
+        		<a class="btn btn-lg  left" style="color: white"><img src="img/star1.png" id="star3" onclick="set3()" onmouseover="changeStar3()" onmouseout="changeStar3()" alt="...">
+        		</a>
+
+        		<a class="btn btn-lg  left" style="color: white"><img src="img/star1.png" id="star4"onclick="set4()" onmouseover="changeStar4()" onmouseout="changeStar4()" alt="...">
+        		</a>
+
+        		<a  class="btn btn-lg  left" style="color: white"><img src="img/star1.png" id="star5" onclick="set5()" onmouseover="changeStar5()" onmouseout="changeStar5()" alt="...">
+        		</a>
+
+        		
+
+        		
+        		
+        		
+				<script>
+					function changeImage() {
+					  var image = document.getElementById('myImage');
+					  if (image.src.match("campana2")) {
+					    image.src = "img/campana.png";
+					    document.getElementById('msgcampana').innerHTML = "Suscribirse";
+					  } else {
+					    image.src = "img/campana2.png";
+					    document.getElementById('msgcampana').innerHTML = "Suscrito";
+					  }
+					}
+					function changeImage2() {
+					  var image = document.getElementById('myImage2');
+					  if (image.src.match("instagram1")) {
+					    image.src = "img/instagram2.png";
+					    
+					  } else {
+					    image.src = "img/instagram1.png";
+					    
+					  }
+					}
+					function changeImage3() {
+					  var image = document.getElementById('myImage3');
+					  if (image.src.match("twitter1")) {
+					    image.src = "img/twitter2.png";
+					    
+					  } else {
+					    image.src = "img/twitter1.png";
+					    
+					  }
+					}
+					function changeImage4() {
+					  var image = document.getElementById('myImage4');
+					  if (image.src.match("face1")) {
+					    image.src = "img/face2.png";
+					    
+					  } else {
+					    image.src = "img/face1.png";
+					    
+					  }
+					}
+					function changeImage5() {
+					  var image = document.getElementById('myImage5');
+					  if (image.src.match("web1")) {
+					    image.src = "img/web2.png";
+					    
+					  } else {
+					    image.src = "img/web1.png";
+					    
+					  }
+					}
+
+					function changeStar1() {
+					  var image = document.getElementById('star1');
+					  if (! image.src.match("star3")) {
+					    
+					  	if (image.src.match("star1")) 
+						  {
+						    image.src = "img/star2.png";
+						  } 
+						  else 
+						  {
+						    image.src = "img/star1.png";
+						  }
+					    
+					  } 
+					  
+					}
+
+					function changeStar2() {
+					  changeStar1();
+					  var image = document.getElementById('star2');
+					   if (! image.src.match("star3")) {
+					    
+					  	if (image.src.match("star1")) 
+						  {
+						    image.src = "img/star2.png";
+						  } 
+						  else 
+						  {
+						    image.src = "img/star1.png";
+						  }
+					    
+					  } 
+
+					}
+
+					function changeStar3() {
+					  changeStar2();
+					  var image = document.getElementById('star3');
+					   if (! image.src.match("star3")) {
+					    
+					  	if (image.src.match("star1")) 
+						  {
+						    image.src = "img/star2.png";
+						  } 
+						  else 
+						  {
+						    image.src = "img/star1.png";
+						  }
+					    
+					  } 
+
+					}
+
+					function changeStar4() {
+					  changeStar3();
+					  var image = document.getElementById('star4');
+					   if (! image.src.match("star3")) {
+					    
+					  	if (image.src.match("star1")) 
+						  {
+						    image.src = "img/star2.png";
+						  } 
+						  else 
+						  {
+						    image.src = "img/star1.png";
+						  }
+					    
+					  } 
+
+					}
+
+					function changeStar5() {
+					  changeStar4();
+					  var image = document.getElementById('star5');
+					   if (! image.src.match("star3")) {
+					    
+					  	if (image.src.match("star1")) 
+						  {
+						    image.src = "img/star2.png";
+						  } 
+						  else 
+						  {
+						    image.src = "img/star1.png";
+						  }
+					    
+					  } 
+
+					}
+
+					function set1() {
+						ini2();
+						ini3();
+						ini4();
+						ini5();
+						var image = document.getElementById('star1');
+						image.src = "img/star3.png";
+					}
+
+					function set2() {
+						set1();
+						var image = document.getElementById('star2');
+						image.src = "img/star3.png";
+					}
+
+					function set3() {
+						set2();
+						var image = document.getElementById('star3');
+						image.src = "img/star3.png";
+					}
+
+					function set4() {
+						set3();
+						var image = document.getElementById('star4');
+						image.src = "img/star3.png";
+					}
+
+					function set5() {
+						set4();
+						var image = document.getElementById('star5');
+						image.src = "img/star3.png";
+					}
+
+					function ini1() {
+						var image = document.getElementById('star1');
+						image.src = "img/star1.png";
+					}
+
+					function ini2() {
+						var image = document.getElementById('star2');
+						image.src = "img/star1.png";
+					}
+
+					function ini3() {
+						var image = document.getElementById('star3');
+						image.src = "img/star1.png";
+					}
+
+					function ini4() {
+						var image = document.getElementById('star4');
+						image.src = "img/star1.png";
+					}
+
+					function ini5() {
+						var image = document.getElementById('star5');
+						image.src = "img/star1.png";
+					}
+
+				</script>
+
+				<div class="jumbotron jumbotron-fluid" id="Jumbo8" >
+					<div class="container" style="margin-left: 20px; margin-right: 20px">
+						
+				        <h1 class="display-3"  >Becazo</h1>
+				      
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="jumbotron jumbotron-fluid" id="Jumbo" >
+			<div class="container">
+				<h1 class="display-3" >Información del evento</h1>
+			</div>
+		</div>
+			
+		<div>
+			<ul class="list-group list-group-flush">
+			  <li class="display-4 list-group-item">BecaUnPana</li>
+			  <li class="display-4 list-group-item">#Ferias   #Música</li>
+			  <li class="display-4 list-group-item">18 de Diciembre del 2017</li>
+			  <li class="display-4 list-group-item">En las Canchas de la UCAB</li>
+			  <li class="display-4 list-group-item">
+			  	<div class="accordion" id="accordionExample">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn dropdown-toggle "  type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				         <p class="display-4" style="text-decoration: none">Descripción</p>
+				        </button>
+				      </h2>
+				    </div>
+
+				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Asiste al Becazo con tus amigos para pasar un buen rato. Habrá musica, diversión y entretenimiento. Con tu apoyo ayudamos a otras personas a financiar sus estudios
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				</li>
+			</ul>
+		</div>	
+
+		<div aling="center"  style="float:center; text-align:center;margin-top: 300px;">
+	 
+			<iframe width="1000" height="700" src="https://www.youtube.com/embed/vxuCNtEYyCA?start=1" frameborder="0"  allowfullscreen></iframe>
+		</div>
+
+
+
+		
+
+
+
+
+							
+		
+						
+
+	</body>
+</html>
